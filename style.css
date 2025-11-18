@@ -143,7 +143,37 @@ button a {
   font-size: 1em;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 800px) {
+  .right-content-copy {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  h1.nav {
+    font-family: "System-UI", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -0.05em;
+    font-size: 0.2em;
+    transition: transform 0.5s ease, color 0.3s ease;
+  }
+
+  .nav-centered-text h3 {
+    font-size: 0.4em;
+  }
+
+  .nav-logo {
+    width: 100%;
+  }
+
+  .nav-logo img {
+    object-fit: fill;
+  }
+
   .right-content-copy {
     flex-direction: column;
     text-align: center;
