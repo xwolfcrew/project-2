@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  font-family: "System-UI", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  font-size: 1em;
+}
+
+h3 {
+  font-family: "System-UI", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  font-size: 0.8em;
+}
+
+.right-content-header h3 {
+  font-family: "System-UI", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  font-size: 1em;
+}
+
+.right-content-desc p {
+  font-family: "System-UI", sans-serif;
+  letter-spacing: -0.05em;
+  font-size: 0.95em;
+}
+
+.project-number h3 {
+  font-family: "System-UI", sans-serif;
+  letter-spacing: -0.05em;
+  font-size: 0.96em;
+  color: rgba(24, 24, 24, 0.6);
+}
+
+.left-nav-static {
+  position: fixed;
+  padding: 20px 20px;
+  width: 20vw;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 2px solid #000;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 0.4em;
+}
+
+h1.nav {
+  font-family: "System-UI", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  font-size: 1em;
+  transition: transform 0.5s ease, color 0.3s ease;
+}
+
+h1.nav:hover {
+  font-family: "System-UI", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  font-size: 1em;
+  transform: scale(1.02);
+  color: #767676;
+}
+
+.nav-centered-text {
+  text-align: center;
+  justify-content: center;
+}
+
+.nav-centered-text h3 {
+  font-weight: 500;
+}
+
+.nav-logo img {
+  width: 90%;
+  transform: translate(4%);
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.right-content {
+  position: relative;
+  background-color: #fff;
+  margin-left: 20vw;
+  padding: 20px 20px;
+  width: 80vw;
+  height: fit-content;
+}
+
+.right-content-hero {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 1em;
+}
+
+.right-content-copy {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5vh;
+}
+
+button {
+  position: relative;
+  border-radius: 2em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  background: #000;
+}
+
+button a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "System-UI", sans-serif;
+  letter-spacing: 0.005em;
+  font-size: 1em;
+}
+
+@media screen and (max-width: 800px) {
+  .right-content-copy {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}
